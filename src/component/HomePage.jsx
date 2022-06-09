@@ -1,7 +1,10 @@
+import Card from "./Card";
 import React from "react";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import Grid from "./Grid";
 import "./HomePage.css";
+import Footer from "./Footer";
 
 function HomePage() {
   const navigate = useNavigate();
@@ -35,6 +38,7 @@ function HomePage() {
       <div className="homepage__card">
         <div
           className="homepage__card--web"
+          onClick={() => navigate("/web-design")}
           style={{
             backgroundImage:
               width >= 1080
@@ -50,11 +54,17 @@ function HomePage() {
           <h2>WEB DESIGN</h2>
           <p className="homepage__card--link">
             VIEW PROJECTS
-            <i class="fa fa-chevron-right" style={{ color: "red" }}></i>
+            <i
+              class="fa fa-chevron-right"
+              style={{ color: "red", margin: "0 .5rem" }}
+            ></i>
           </p>
         </div>
         <div
           className="homepage__card--app"
+          onClick={() => {
+            navigate("/app-design");
+          }}
           style={{
             backgroundImage:
               width >= 1080
@@ -70,7 +80,10 @@ function HomePage() {
           <h2>APP DESIGN</h2>
           <p className="homepage__card--link">
             VIEW PROJECTS
-            <i class="fa fa-chevron-right" style={{ color: "red" }}></i>
+            <i
+              class="fa fa-chevron-right"
+              style={{ color: "red", margin: "0 .5rem" }}
+            ></i>
           </p>
         </div>
         <div
@@ -86,14 +99,28 @@ function HomePage() {
             width: "20rem",
             objectFit: "contain",
           }}
+          onClick={() => {
+            navigate("/graphic-design");
+          }}
         >
           <h2>GRAPHIC DESIGN</h2>
           <p className="homepage__card--link">
             VIEW PROJECTS
-            <i class="fa fa-chevron-right" style={{ color: "red" }}></i>
+            <i
+              class="fa fa-chevron-right"
+              style={{ color: "red", margin: "0 .5rem" }}
+            ></i>
           </p>
         </div>
       </div>
+      <Grid />
+      <Card
+        style={{ transform: "translateY(10rem)" }}
+        title="Let's talk about your project"
+        description=" Ready to take it to the next level? Contact us today and find out how
+        our expertise can help your business grow."
+      />
+      <Footer />
     </div>
   );
 }

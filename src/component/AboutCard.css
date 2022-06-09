@@ -1,0 +1,16 @@
+.aboutCard{
+ width: 23.5rem;
+ padding: 3rem 2rem;
+ transform: translateY(-1rem);
+ text-align: center;
+
+
+ 
+}
+
+.aboutCard__description,.aboutCard__description--span{
+    color:black;
+    line-height: 1.625rem;
+    font-size: 1rem;
+    margin-top: 1rem;
+}

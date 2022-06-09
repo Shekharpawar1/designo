@@ -6,6 +6,9 @@ import HomePage from './component/HomePage';
 import About from './component/About';
 import Location from './component/Location';
 import Contact from './component/Contact';
+import WebDesign from './component/WebDesign';
+import AppDesign from './component/AppDesign';
+import GraphicDesign from './component/GraphicDesign';
 
 
 function App() {
@@ -17,6 +20,9 @@ function App() {
          <Route exact path="/about" element={<About/>}/>
          <Route exact path="/contact" element={<Contact/>}/>
          <Route exact path="/location" element={<Location/>}/>
+         <Route exact path="/web-design" element={<WebDesign/>}/>
+         <Route exact path="/app-design" element={<AppDesign/>}/>
+         <Route exact path="/graphic-design" element={<GraphicDesign/>}/>
        </Routes>
 
     </Router>
