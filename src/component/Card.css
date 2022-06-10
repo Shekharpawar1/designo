@@ -1,16 +1,19 @@
 .card{
     background: hsl(11,73%,66%);
-    width: 20rem;
+    max-width: 20rem;
     margin: 2rem auto;
     text-align: center;
     color:white;
     height: 20rem;
+    height: auto;
+    padding-bottom: 20px;
     border-radius: 1rem;
     /* transform: translateY(10rem); */
 }
 
 .card__title{
     padding: 1rem 2rem;
+    letter-spacing: 1.6px;
 }
 .card__description{
     padding:1rem 2rem;
@@ -24,5 +27,68 @@
     margin-top: -1rem;
     outline:none;
     border:none;
+    
+}
+
+
+@media only Screen and (min-width:1080px){
+    .card{
+       
+        max-width: 80rem;
+        height:20rem;
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        background-image: url('../../public/assets/images/graphic-design/desktop/bg-pattern-intro-graphic.svg');
+        background-position: center ;
+        background-repeat: no-repeat;
+       
+    }
+    .card__title{
+        font-size: 40px;
+        max-width: 25rem;
+        padding-top: 3rem;
+        text-align: left;
+        font-weight: bold;
+    }
+    .card__description{
+        max-width: 25rem;
+        text-align: left;
+       
+    }
+    .card__button{
+        height: 5rem;
+        width: fit-content;
+        border-radius: 1rem;
+        padding: 2rem;
+        
+    }
+
+    .webdesign,.appdesign,.graphicdesign{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr  ;
+        padding: 0rem 1rem;
+        gap:5rem;
+        width: 76rem;
+        transform: translateX(7.8rem);
+        place-content: space-evenly;
+        place-items: center;
+
+       
+    }
+    .webdesign>img{
+        width: 85rem;
+      
+        height: 15rem;
+        object-fit: contain;
+
+    }
+    
+    .homepage__card--graphic,.homepage__card--app,.homepage__card--web{
+        /* height: 45rem; */
+        width: 35rem;
+
+    }
     
 }

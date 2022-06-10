@@ -2,11 +2,11 @@ import React from "react";
 import { useState } from "react";
 import AboutCard from "./AboutCard";
 import Card from "./Card";
+import "./Card.css";
 import Footer from "./Footer";
 import Location from "./Location";
 
 function About() {
-  const visible = true;
   const [width, setWidth] = useState(window.innerWidth);
   window.addEventListener("resize", () => {
     setWidth(window.innerWidth);
@@ -80,7 +80,7 @@ function About() {
         title="Let's talk about your project"
         description=" Ready to take it to the next level? Contact us today and find out how
         our expertise can help your business grow."
-        visible={visible}
+        form
       />
       <Footer />
     </div>

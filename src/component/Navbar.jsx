@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 
 import { NavLink } from "react-router-dom";
 import "./Navbar.css";
 
 function Navbar() {
+  const [width, setWidth] = useState();
+  window.addEventListener("resize", () => {
+    setWidth(window.innerWidth);
+  });
   const handleClick = () => {
     // alert("11");
     document.querySelector("#hamburger").classList.add("active");
@@ -26,14 +30,22 @@ function Navbar() {
           <li className="nav__menu--listItems">
             <NavLink
               to="/about"
-              style={{ color: "white", textDecoration: "none" }}
+              style={
+                width >= 1080
+                  ? { color: "white", textDecoration: "none" }
+                  : { color: "black", textDecoration: "none" }
+              }
             >
               OUR COMPANY
             </NavLink>
           </li>
           <li className="nav__menu--listItems">
             <NavLink
-              style={{ color: "white", textDecoration: "none" }}
+              style={
+                width <= 1080
+                  ? { color: "white", textDecoration: "none" }
+                  : { color: "black", textDecoration: "none" }
+              }
               to="/location"
             >
               LOCATIONS
@@ -42,7 +54,11 @@ function Navbar() {
           <li className="nav__menu--listItems">
             <NavLink
               to="/contact"
-              style={{ color: "white", textDecoration: "none" }}
+              style={
+                width <= 1080
+                  ? { color: "white", textDecoration: "none" }
+                  : { color: "black", textDecoration: "none" }
+              }
             >
               CONTACT
             </NavLink>

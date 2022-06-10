@@ -14,3 +14,30 @@
     font-size: 1rem;
     margin-top: 1rem;
 }
+
+@media only Screen and (min-width:1080px) {
+    .abt{
+        display:flex;
+       
+        justify-content: center;
+        margin-top: 5rem;
+        align-items: center;
+
+    }
+    .aboutCard{
+       padding: 10rem 2rem;
+       text-align: left;
+       height: 40rem;
+       transform: translateY(.1rem);
+       
+    }
+    .abt--image{
+        height: 40rem;
+        
+        object-fit: contain;
+    }
+    
+   
+
+    
+}

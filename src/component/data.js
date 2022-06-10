@@ -28,30 +28,30 @@ export const location=[
         name:"Canada",
         image:"./assets/images/shared/desktop/illustration-canada.svg",
         address:"Designo Central Office 3886 Wellington Street Toronto, Ontario M9C 3J5",
-        contact:[
+        contact:
             {Phone: "+1 253-863-8967",Mail:"contact@designo.co"}
 
-        ]
+        
     },{
         
         id:2,
         name:"Australia",
         image:"./assets/images/shared/desktop/illustration-australia.svg",
         address:"Designo AU Office 19 Balonne Street New South Wales",
-        contact:[
+        contact:
             {Phone: "(02) 6720 9092",Mail:"contact@designo.au"}
 
-        ]
+        
     },{
         
         id:3,
         name:"United Kingdom",
         image:"./assets/images/shared/desktop/illustration-united-kingdom.svg",
         address:"Designo UK Office 13 Colorado Way Rhyd-y-fro SA8 9GA ",
-        contact:[
+        contact:
             {Phone: "078 3115 1400",Mail:"contact@designo.uk"}
 
-        ]
+        
     }
 ]
 export default data;

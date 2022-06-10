@@ -5,38 +5,40 @@ import "./Footer.css";
 function Footer() {
   return (
     <div className="footer">
-      <img
-        src="./assets/images/shared/desktop/logo-dark.png"
-        className="footer__logo"
-        alt="designo software agency"
-      />
-      <div className="footer__menu">
-        <ul className="footer__menu--list">
-          <li className="footer__menu--listItems">
-            <NavLink
-              to="/about"
-              style={{ color: "white", textDecoration: "none" }}
-            >
-              OUR COMPANY
-            </NavLink>
-          </li>
-          <li className="footer__menu--listItems">
-            <NavLink
-              to="/location"
-              style={{ color: "white", textDecoration: "none" }}
-            >
-              LOCATIONS
-            </NavLink>
-          </li>
-          <li className="footer__menu--listItems">
-            <NavLink
-              to="/contact"
-              style={{ color: "white", textDecoration: "none" }}
-            >
-              CONTACT
-            </NavLink>
-          </li>
-        </ul>
+      <div className="footer--info">
+        <img
+          src="./assets/images/shared/desktop/logo-dark.png"
+          className="footer__logo"
+          alt="designo software agency"
+        />
+        <div className="footer__menu">
+          <ul className="footer__menu--list">
+            <li className="footer__menu--listItems">
+              <NavLink
+                to="/about"
+                style={{ color: "white", textDecoration: "none" }}
+              >
+                OUR COMPANY
+              </NavLink>
+            </li>
+            <li className="footer__menu--listItems">
+              <NavLink
+                to="/location"
+                style={{ color: "white", textDecoration: "none" }}
+              >
+                LOCATIONS
+              </NavLink>
+            </li>
+            <li className="footer__menu--listItems">
+              <NavLink
+                to="/contact"
+                style={{ color: "white", textDecoration: "none" }}
+              >
+                CONTACT
+              </NavLink>
+            </li>
+          </ul>
+        </div>
       </div>
       <p className="footer__address">
         Designo Central Office 3886 Wellington Street Toronto, Ontario M9C 3J5

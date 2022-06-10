@@ -1,73 +1,88 @@
-.homepage__heroSection{
+.homepage__heroSection {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    background-color: hsl(11,73%,66%);text-align: center;
+    background-color: hsl(11, 73%, 66%);
+    text-align: center;
     padding: 2rem;
     margin-top: 1rem;
     height: 58.2rem;
 }
-.homepage__heroSection--title,h2{
+
+.homepage__heroSection--title,
+h2 {
     font-size: 2rem;
-    margin-top:1rem;    font-weight: 900;
-    color:white;
+    margin-top: 1rem;
+    font-weight: 900;
+    color: white;
     line-height: 2.25rem;
     max-width: 29rem;
     padding: 0 1rem;
 }
-.hompage__heroSection--description,.homepage__card--link{
+
+.hompage__heroSection--description,
+.homepage__card--link {
     font-size: .9rem;
     margin: 1.5rem 0rem;
     line-height: 1.625rem;
-    color:white;
-   
+    color: white;
+
 }
 
-.homepage__heroSection--button{
+.homepage__heroSection--button {
     width: fit-content;
     width: -moz-fit-content;
     margin: 1rem auto;
     padding: 1rem;
     border-radius: .5rem;
-    outline:none;
-    border:none;
-    
+    outline: none;
+    border: none;
+
 }
-.homepage__heroSection>img{
+
+.homepage__heroSection>img {
     height: 45rem;
     object-fit: contain;
 }
 
 
-.homepage__card{
-    display:flex;
+.homepage__card {
+    display: flex;
     flex-direction: column;
-    gap:3rem;
+    gap: 3rem;
     align-items: center;
     margin-top: 3rem;
-   
+    padding: 0rem 5rem;
+
 }
-.homepage__card--web,.homepage__card--app,.homepage__card--graphic{
+
+.homepage__card--web,
+.homepage__card--app,
+.homepage__card--graphic {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 2rem 0rem;
     border-radius: 1rem;
+    width: "20rem",
+
 }
-.container{
-   display: flex;
-   flex-direction:column;
-   align-items: center;
-   margin-top: 5rem;
-   gap:6rem;
-   justify-content: space-between;
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+    gap: 6rem;
+    justify-content: space-between;
 }
-h3{
+
+h3 {
     text-align: center;
     font-size: 1.9rem;
 }
 
-.flex__container>p{
+.flex__container>p {
     max-width: 20rem;
     text-align: center;
     margin: 1rem 0rem;
@@ -75,6 +90,97 @@ h3{
     line-height: 2.01rem;
     font-weight: 500;
 }
-.flex__container>img{
+
+.flex__container>img {
     transform: translateX(3rem);
+}
+
+
+@media only Screen and (min-width:1080px) {
+    .homepage__heroSection {
+        flex-direction: row;
+        max-width: 75rem;
+        margin: 0 auto;
+        height:auto;
+        padding: 1rem;
+        border-radius: 1rem;
+        align-items: center;
+    }
+
+    .heroSection__heroImage {
+        max-height: 30rem;
+        padding-top: 4rem;
+    }
+
+    .homepage__heroSection--title,
+    h2 {
+        font-size: 48px;
+        max-width: 32rem;
+        letter-spacing: 1.6px;
+        padding: 0 1rem;
+        text-align: left;
+        line-height: 3.25rem;
+        align-items: center;
+    }
+
+    .hompage__heroSection--description,
+    .homepage__card--link {
+        font-size: 1.2rem;
+     
+        line-height: 1.625rem;
+        margin-left: .8rem;
+        max-width: 27rem;
+        text-align: left;
+
+    }
+
+    .homepage__heroSection--button {
+      transform: translateX(-11.5rem);
+
+    }
+
+    .homepage__heroSection>img {
+        height: 45rem;
+        object-fit: contain;
+    }
+
+
+    .homepage__card {
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 3rem;
+        height: 25rem;
+        align-items: center;
+        margin-top: 3rem;
+
+    }
+    .homepage__card--web,.homepage__card--app{
+        width: 25rem;
+    }
+   .container{
+    flex-direction:row ;
+    justify-content: space-evenly;
+   }
+   
+
+    h3 {
+        text-align: center;
+        font-size: 1.9rem;
+    }
+
+    .flex__container>p {
+        max-width: 20rem;
+        text-align: center;
+        margin: 1rem 0rem;
+        font-size: 1rem;
+        line-height: 2.01rem;
+        font-weight: 500;
+    }
+
+    .flex__container>img {
+        transform: translateX(3rem);
+    }
+
+
+
 }

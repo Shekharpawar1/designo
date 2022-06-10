@@ -66,3 +66,31 @@ li:hover {
     display: block;
 
 }
+
+@media  only Screen and (min-width:1080px) {
+.nav{
+    padding:2rem;
+}
+    .nav__menu--hamburgerIcon,.nav__menu--closeIcon{
+        display: none;
+    }
+    .nav__logo{
+        transform: translateX(10.5rem);
+        
+    }
+    .nav__menu--list{
+       top:1.6rem;
+       left: 58rem;
+       justify-content: flex-end;
+       display: flex;
+       gap:5rem;
+       font-size: 1.2rem;
+       /* background-color: black; */
+    }
+    .nav__menu--listItems:hover{
+        border-bottom: 1px solid black;
+        padding-bottom: 2px;
+        color:black;
+    }
+
+}
