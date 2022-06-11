@@ -94,3 +94,20 @@ li:hover {
     }
 
 }
+@media  only Screen and (min-width:500px)and (max-width:1080px) {
+    .nav{
+        padding:2rem;
+    }
+        .nav__menu--hamburgerIcon,.nav__menu--closeIcon{
+            transform: translateX(25rem);
+        }
+        .nav__logo{
+            transform: translateX(1rem);
+            
+        }
+        .nav__menu--list.active{
+            top:6rem;
+        }
+
+    
+    }

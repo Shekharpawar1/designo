@@ -27,9 +27,9 @@ function AppDesign() {
       <div className="appdesign">
         <div>
           <img
+            className="appdesign__img"
             src="./assets/images/app-design/desktop/image-airfilter.jpg"
             alt="Air filter screenshot"
-            width="100%"
             style={{
               transform: "translateY(2.4rem)",
             }}
@@ -49,7 +49,7 @@ function AppDesign() {
 
         <div>
           <img
-            width="100%"
+            className="appdesign__img"
             src="./assets/images/app-design/desktop/image-eyecam.jpg"
             alt="EYECAM screenshot"
             style={{
@@ -70,7 +70,7 @@ function AppDesign() {
         </div>
         <div>
           <img
-            width="100%"
+            className="appdesign__img"
             src="./assets/images/app-design/desktop/image-faceit.jpg"
             alt="faceit  App screenshot"
             style={{
@@ -92,7 +92,7 @@ function AppDesign() {
 
         <div>
           <img
-            width="100%"
+            className="appdesign__img"
             src="./assets/images/app-design/desktop/image-loopstudios.jpg"
             alt="LOOPSTUDIOS  App screenshot"
             style={{
@@ -114,7 +114,7 @@ function AppDesign() {
 
         <div>
           <img
-            width="100%"
+            className="appdesign__img"
             src="./assets/images/app-design/desktop/image-todo.jpg"
             alt="TODO  App screenshot"
             style={{

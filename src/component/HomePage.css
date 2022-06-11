@@ -184,3 +184,80 @@ h3 {
 
 
 }
+
+@media only Screen and (min-width:500px) and (max-width:1080px){
+    
+    .homepage{
+        margin:0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        
+    }
+    .homepage__heroSection {
+        flex-direction: row;
+     
+        max-width: 100rem;
+        margin: 0 auto;
+        height:auto;
+        padding: 1rem;
+       
+        border-radius: 1rem;
+        align-items: center;
+    }
+
+    .heroSection__heroImage {
+        max-height: 30rem;
+        padding-top: 4rem;
+    }
+
+    .homepage__heroSection--title,
+    h2 {
+        font-size: 48px;
+        max-width: 32rem;
+        letter-spacing: 1.6px;
+        padding: 0 1rem;
+        text-align: left;
+        line-height: 3.25rem;
+        align-items: center;
+    }
+
+    .hompage__heroSection--description,
+    .homepage__card--link {
+        font-size: 1.2rem;
+     
+        line-height: 1.625rem;
+        margin-left: .8rem;
+        max-width: 27rem;
+        text-align: left;
+
+    }
+
+    .homepage__heroSection--button {
+      transform: translateX(-11.5rem);
+
+    }
+
+    .homepage__heroSection>img {
+        height: 45rem;
+        object-fit: contain;
+    }
+
+
+    .homepage__card {
+        flex-direction: column;
+       
+
+    }
+    .homepage__card--web,.homepage__card--app{
+        width: 25rem;
+    }
+   .container{
+    flex-flow:row wrap;
+    justify-content: space-evenly;
+   }
+   
+
+
+
+}

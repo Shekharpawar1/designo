@@ -34,7 +34,7 @@ function WebDesign() {
             }}
             src="./assets/images/web-design/desktop/image-express.jpg"
             alt="express website screenshot"
-            width="100%"
+            className="webdesign__img"
           />
 
           <Card
@@ -53,7 +53,7 @@ function WebDesign() {
             style={{
               transform: "translateY(2.4rem)",
             }}
-            width="100%"
+            className="webdesign__img"
             src="./assets/images/web-design/desktop/image-photon.jpg"
             alt="express website screenshot"
           />
@@ -74,7 +74,7 @@ function WebDesign() {
             style={{
               transform: "translateY(2.4rem)",
             }}
-            width="100%"
+            className="webdesign__img"
             src="./assets/images/web-design/desktop/image-transfer.jpg"
             alt="express website screenshot"
           />
@@ -96,7 +96,7 @@ function WebDesign() {
             style={{
               transform: "translateY(2.4rem)",
             }}
-            width="100%"
+            className="webdesign__img"
             src="./assets/images/web-design/desktop/image-camp.jpg"
             alt="express website screenshot"
           />
@@ -117,7 +117,7 @@ function WebDesign() {
             style={{
               transform: "translateY(2.4rem)",
             }}
-            width="100%"
+            className="webdesign__img"
             src="./assets/images/web-design/desktop/image-builder.jpg"
             alt="express website screenshot"
           />
@@ -139,7 +139,7 @@ function WebDesign() {
             style={{
               transform: "translateY(2.4rem)",
             }}
-            width="100%"
+            className="webdesign__img"
             src="./assets/images/web-design/desktop/image-blogr.jpg"
             alt="express website screenshot"
           />

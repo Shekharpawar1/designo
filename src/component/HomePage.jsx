@@ -13,6 +13,7 @@ function HomePage() {
   window.addEventListener("resize", () => {
     setWidth(window.innerWidth);
   });
+
   return (
     <div className="homepage">
       <div className="homepage__heroSection">

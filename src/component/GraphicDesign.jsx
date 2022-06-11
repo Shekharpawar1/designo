@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Card from "./Card";
+import "./Card.css";
 import Footer from "./Footer";
 import HomePageCard from "./HomePageCard";
 
@@ -27,11 +28,10 @@ function GraphicDesign() {
       />
       <div className="graphicdesign">
         <div>
-          {" "}
           <img
+            className="graphicdesign__img"
             src="./assets/images/graphic-design/desktop/image-change.jpg"
             alt="Change by Tim Brown"
-            width="100%"
             style={{
               transform: "translateY(2.4rem)",
             }}
@@ -42,15 +42,14 @@ function GraphicDesign() {
             visible
             form
             style={{
-              width: "100%",
+              // width: "100%",
               borderRadius: 0,
             }}
           />
         </div>
         <div>
-          {" "}
           <img
-            width="100%"
+            className="graphicdesign__img"
             src="./assets/images/graphic-design/desktop/image-boxed-water.jpg"
             alt="BOXED WATER cover"
             style={{
@@ -69,9 +68,8 @@ function GraphicDesign() {
           />
         </div>
         <div>
-          {" "}
           <img
-            width="100%"
+            className="graphicdesign__img"
             src="./assets/images/graphic-design/desktop/image-science.jpg"
             alt="SCIENCE book cover"
             style={{

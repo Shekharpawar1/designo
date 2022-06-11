@@ -7,6 +7,9 @@
     color:white;
     height: auto;
     padding-bottom: 1rem;
+    margin-top: 2rem;
+    /* min-width: 100%; */
+    max-width: 100%;
     
 }
 .footer__logo{
@@ -52,3 +55,26 @@
         flex-direction: row;
     }
 }
+@media screen and (min-width:500px) and (max-width:1080px) {
+    .footer{
+        display: flex;
+        flex-direction: column;
+        margin-top: 5rem;
+        align-items: center;
+        justify-content: space-evenly;
+        color:gray;
+         line-height: 1.6px;
+        letter-spacing: 1.6px;
+    }
+    .footer__menu--list{
+        display: flex;
+        margin-top: 2rem;
+        flex-direction: row;
+    }
+    .footer__logo{
+        transform: translateX(2rem);
+    }
+    .footer__address,.footer_addressContact{
+        max-width: 35rem;
+    }
+} 

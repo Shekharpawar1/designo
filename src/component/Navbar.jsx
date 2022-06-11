@@ -31,9 +31,11 @@ function Navbar() {
             <NavLink
               to="/about"
               style={
-                width >= 1080
+                width <= 500
                   ? { color: "white", textDecoration: "none" }
-                  : { color: "black", textDecoration: "none" }
+                  : width <= 1080
+                  ? { color: "white", textDecoration: "none" }
+                  : { color: "black ", textDecoration: "none" }
               }
             >
               OUR COMPANY
@@ -42,9 +44,11 @@ function Navbar() {
           <li className="nav__menu--listItems">
             <NavLink
               style={
-                width <= 1080
+                width <= 500
                   ? { color: "white", textDecoration: "none" }
-                  : { color: "black", textDecoration: "none" }
+                  : width <= 1080
+                  ? { color: "white", textDecoration: "none" }
+                  : { color: "black ", textDecoration: "none" }
               }
               to="/location"
             >
@@ -55,9 +59,11 @@ function Navbar() {
             <NavLink
               to="/contact"
               style={
-                width <= 1080
+                width <= 500
                   ? { color: "white", textDecoration: "none" }
-                  : { color: "black", textDecoration: "none" }
+                  : width <= 1080
+                  ? { color: "white", textDecoration: "none" }
+                  : { color: "black ", textDecoration: "none" }
               }
             >
               CONTACT

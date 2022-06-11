@@ -31,6 +31,7 @@ function Location() {
                   border: "none",
                   borderRadius: ".7rem",
                   color: "white",
+                  marginTop: "2rem",
                 }}
               >
                 SEE LOCATION

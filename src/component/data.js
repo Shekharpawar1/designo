@@ -28,6 +28,8 @@ export const location=[
         name:"Canada",
         image:"./assets/images/shared/desktop/illustration-canada.svg",
         address:"Designo Central Office 3886 Wellington Street Toronto, Ontario M9C 3J5",
+        latitude:43.651070,
+        longitude:-79.347015,
         contact:
             {Phone: "+1 253-863-8967",Mail:"contact@designo.co"}
 
@@ -36,8 +38,10 @@ export const location=[
         
         id:2,
         name:"Australia",
+        latitude:-31.953512,
+        longitude:115.857048,
         image:"./assets/images/shared/desktop/illustration-australia.svg",
-        address:"Designo AU Office 19 Balonne Street New South Wales",
+        address:"Designo AU Office 19 Balonne Perth",
         contact:
             {Phone: "(02) 6720 9092",Mail:"contact@designo.au"}
 
@@ -46,8 +50,10 @@ export const location=[
         
         id:3,
         name:"United Kingdom",
+        latitude:	51.509865,
+        longitude:-0.118092,
         image:"./assets/images/shared/desktop/illustration-united-kingdom.svg",
-        address:"Designo UK Office 13 Colorado Way Rhyd-y-fro SA8 9GA ",
+        address:"Designo USA Office 13 London SA8 9GA ",
         contact:
             {Phone: "078 3115 1400",Mail:"contact@designo.uk"}
 

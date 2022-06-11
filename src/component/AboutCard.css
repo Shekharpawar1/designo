@@ -1,5 +1,5 @@
 .aboutCard{
- width: 23.5rem;
+ max-width: 23.5rem;
  padding: 3rem 2rem;
  transform: translateY(-1rem);
  text-align: center;
@@ -14,7 +14,32 @@
     font-size: 1rem;
     margin-top: 1rem;
 }
+@media  only Screen and (min-width:500px) and (max-width:1080px) {
+    .abt{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 5rem;
+        align-items: center;
 
+    }
+    .aboutCard{
+       padding: 10rem 2rem;
+       text-align: left;
+       height: 40rem;
+       max-width: 100%;
+       /* max-width: 100%; */
+       transform: translateY(-9rem);
+       
+    }
+    .abt--image{
+        height: 40rem;
+        width: 48rem;
+        object-fit: contain;
+    }
+
+    
+}
 @media only Screen and (min-width:1080px) {
     .abt{
         display:flex;
@@ -28,6 +53,7 @@
        padding: 10rem 2rem;
        text-align: left;
        height: 40rem;
+       /* max-width: 100%; */
        transform: translateY(.1rem);
        
     }
