@@ -7,7 +7,7 @@ import Footer from "./Footer";
 import Location from "./Location";
 
 function About() {
-  const [width, setWidth] = useState(window.innerWidth);
+  const [width, setWidth] = useState();
   window.addEventListener("resize", () => {
     setWidth(window.innerWidth);
   });

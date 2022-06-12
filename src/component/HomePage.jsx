@@ -9,7 +9,7 @@ import HomePageCard from "./HomePageCard";
 
 function HomePage() {
   const navigate = useNavigate();
-  const [width, setWidth] = useState(window.innerWidth);
+  const [width, setWidth] = useState();
   window.addEventListener("resize", () => {
     setWidth(window.innerWidth);
   });
