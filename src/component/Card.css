@@ -38,7 +38,9 @@
 }
 .webdesign,.appdesign,.graphicdesign{
     display: grid;
+    display: -ms-grid;
    grid-template-columns: 1fr ;
+   -ms-grid-column:1fr ;
 
    padding: 0rem 1rem;
    gap:5rem;
@@ -109,6 +111,7 @@
     .card__button{
         height: 5rem;
         width: fit-content;
+        width: -moz-fit-content;
         border-radius: 1rem;
         padding: 2rem;
         
@@ -116,7 +119,11 @@
 
     .webdesign,.appdesign,.graphicdesign{
          display: grid;
+
+         display:-ms-grid;
+       
         grid-template-columns: 1fr 1fr 1fr;
+        -ms-grid-columns: 1fr 1fr 1fr;
      
         
 
@@ -127,16 +134,9 @@
        
     }
    
-    /* .webdesign>img{
-        /* width: 25rem;
-      
-        height: 15rem;
-        object-fit: contain; */
-/* 
-    } */ */
-    
+   
     .homepage__card--graphic,.homepage__card--app,.homepage__card--web{
-        /* height: 45rem; */
+     
         width: 15rem;
 
     }
