@@ -10,6 +10,8 @@ function Card({ title, style, description, visible, form }) {
       <div className="card__info">
         <h1 className="card__title">{title}</h1>
         <p className="card__description">{description}</p>
+        {/* <p className="card__description">{desc}</p>
+        <p className="card__description">{des}</p> */}
       </div>
 
       {!visible && (

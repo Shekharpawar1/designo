@@ -13,11 +13,14 @@ function LocationItems() {
               {/*
       <Maps latitude={item.latitude} longitude={item.longitude} /> */}
               <Maps latitude={item.latitude} longitude={item.longitude} />
-              <div>
-                <h1>{item.name}</h1>
-                <p>{item.address}</p>
-                <p>{item.contact.Phone}</p>
-                <p>{item.contact.Mail}</p>
+              <div className="location__item--info">
+                <h1 className="location__item--title">{item.name}</h1>
+                <p className="location__item--address">{item.address}</p>
+                <p className="location__item--contact">
+                  {item.contact.Phone}
+                  {<br></br>}
+                  {item.contact.Mail}
+                </p>
               </div>
             </div>
           </>

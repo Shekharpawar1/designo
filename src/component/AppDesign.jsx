@@ -37,7 +37,6 @@ function AppDesign() {
 
           <Card
             style={{
-              width: "100%",
               borderRadius: 0,
             }}
             title="AIRFILTER"

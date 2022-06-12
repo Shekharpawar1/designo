@@ -6,6 +6,7 @@
     color:white;
     height: 20rem;
     height: auto;
+  
     padding-bottom: 20px;
     border-radius: 1rem;
     /* transform: translateY(10rem); */
@@ -35,6 +36,25 @@
     border:none;
     
 }
+.webdesign,.appdesign,.graphicdesign{
+    display: grid;
+   grid-template-columns: 1fr ;
+
+   padding: 0rem 1rem;
+   gap:5rem;
+  
+   place-content: space-evenly;
+   place-items: center;
+
+  
+}
+.webdesign__img,.appdesign__img,.graphicdesign__img{
+   width: 25rem;
+   margin: 0 auto;
+   
+   object-fit: contain;
+}
+
 
 
 @media only Screen and (min-width:500px) and (max-width:1080px){
@@ -45,19 +65,20 @@
         max-width: 100%;
     }
     
-    .graphicdesign__img,.appdesign__img,.webdesign__img{
-        transform: translateX(-80rem);
-        width: 100%;
-        height: 35rem;
-        object-fit: contain;
-    }
-    .graphicdesign{
-        display: flex;
-        flex-flow: column wrap;
-    }
-    /* .card__info{
-        max-width: 25rem;
-    } */
+    .webdesign,.appdesign,.graphicdesign{
+        display:flex;
+        flex-flow: row wrap; 
+    
+       
+      
+      
+
+      
+   }
+   .webdesign__img,.appdesign__img,.graphicdesign__img{
+       width: 45rem;
+    
+   }
 }
 @media only Screen and (min-width:1080px){
     .card{
@@ -94,28 +115,29 @@
     }
 
     .webdesign,.appdesign,.graphicdesign{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr  ;
-        padding: 0rem 1rem;
-        gap:5rem;
-        width: 76rem;
-        transform: translateX(7.8rem);
-        place-content: space-evenly;
-        place-items: center;
+         display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+     
+        
 
        
     }
-    .webdesign>img{
-        width: 85rem;
+    .webdesign__img,.appdesign__img,.graphicdesign__img{
+        width: 25rem;
+       
+    }
+   
+    /* .webdesign>img{
+        /* width: 25rem;
       
         height: 15rem;
-        object-fit: contain;
-
-    }
+        object-fit: contain; */
+/* 
+    } */ */
     
     .homepage__card--graphic,.homepage__card--app,.homepage__card--web{
         /* height: 45rem; */
-        width: 35rem;
+        width: 15rem;
 
     }
     

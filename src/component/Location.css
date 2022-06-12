@@ -5,23 +5,46 @@
     margin-bottom: 2rem;
 
 }
+.location__item--info{
+    background-color:hsl(11, 73%, 66%);
+    transform: translateY(-2.5rem);
+    color:#fff;
+    
+
+}
 @media  Screen and (min-width:1080px) {
     .location{
         display: flex ;
         flex-direction: row;
         justify-content: space-evenly;
     }
+    .location__item--info{
+        width: 75%;
+        margin: 0 auto; 
+        color:#fff;
+        border-radius: 0 0 1rem 1rem;
+
+    }
     
+   
+}
+
+
+  
     
 
-    
-}
 @media Screen and (min-width:500px) and (max-width:1080px){
     .location{
         display: flex ;
         flex-flow: row wrap;
         justify-content: space-evenly;
         
+    }
+    .location__item--info{
+        width: 95%;
+        margin: 0 auto; 
+        color:#fff;
+        border-radius: 0 0 1rem 1rem;
     }
 
 }
