@@ -9,7 +9,7 @@ import Contact from './component/Contact';
 import WebDesign from './component/WebDesign';
 import AppDesign from './component/AppDesign';
 import GraphicDesign from './component/GraphicDesign';
-import PageNotFound from './component/PageNotFound';
+import PageNotFound from './component/404';
 
 
 function App() {
