@@ -9,6 +9,7 @@ import Contact from './component/Contact';
 import WebDesign from './component/WebDesign';
 import AppDesign from './component/AppDesign';
 import GraphicDesign from './component/GraphicDesign';
+import PageNotFound from './component/PageNotFound';
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
          <Route exact path="/web-design" element={<WebDesign/>}/>
          <Route exact path="/app-design" element={<AppDesign/>}/>
          <Route exact path="/graphic-design" element={<GraphicDesign/>}/>
+         <Route  path="/*" element={<PageNotFound/>}/>
        </Routes>
 
     </Router>
