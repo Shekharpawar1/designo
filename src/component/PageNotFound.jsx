@@ -12,13 +12,19 @@ function PageNotFound() {
           color: "hsl(11, 73%, 66%)",
           fontSize: "9rem",
           padding: "1rem 0rem .5rem",
+          fontWeight: "bolder",
         }}
       >
         404
       </h1>
       <p
         className="pageNotFound__desc"
-        style={{ padding: "1rem 0rem", fontSize: "1.5rem", color: "#111" }}
+        style={{
+          padding: "1rem 0rem",
+          fontWeight: "bolder",
+          fontSize: "1.5rem",
+          color: "#111",
+        }}
       >
         PAGE NOT FOUND!
       </p>
@@ -26,10 +32,14 @@ function PageNotFound() {
         className="pageNotFound__link"
         style={{ padding: "1rem 0rem", fontSize: "1.2rem", color: "#111" }}
       >
-        Go back to the{" "}
+        Go back to the
         <NavLink
           to="/"
-          style={{ color: "hsl(11, 73%, 66%)", textDecoration: "none" }}
+          style={{
+            color: "hsl(11, 73%, 66%)",
+            padding: "0rem .5rem",
+            textDecoration: "none",
+          }}
         >
           Homepage
         </NavLink>
